@@ -15,7 +15,7 @@ async function connectDB() {
         dbName: 'jpg-to-pdf-app',
         bufferCommands: false,
       }).then((mongoose) => {
-        log("Db Connection Success")
+        log("Db Connection Success", mongoose)
       }).catch((err)=>{
         log(`Error in connection DB ${err}`)
       });
